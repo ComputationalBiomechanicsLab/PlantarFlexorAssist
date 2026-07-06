@@ -1,0 +1,9 @@
+#thread_priority = -2
+random_seed = 0
+lambda = 16
+mu = 0
+sigma = 1
+max_generations = 1500
+#min_improvement_factor_for_file_output = 1.05
+#output_objective_result_files = 0
+#maximize_objective = 0
