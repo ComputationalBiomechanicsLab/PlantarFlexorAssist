@@ -5,38 +5,26 @@ This repository contains the simulation results and optimization setups associat
 
 The files are provided to facilitate reproducibility, enable additional analyses, and serve as starting points for future SCONE optimization studies.
 
-## Repository Structure
+Here is a revised repository structure description reflecting the new organization:
 
-### 1. SCONE 
+---
 
-The SCONE folder contains two main components:
+# Repository Structure
 
-#### Results
+## 1. SCONE Setup Files
 
-This directory contains simulation results for unimpaired and plantarflexor-weakness (PF) gait models.
+This folder contains all files required to reproduce the SCONE optimization studies presented in the manuscript.
 
-The results of the **unimpaired** and **PF** models were originally obtained from the study:
+The optimization setups include the baseline gait controllers as well as the assistance controller used for the assisted-gait simulations. The assistance controller was implemented in Lua and integrated with the original gait controller, operating alongside the baseline control framework during optimization and simulation.
 
-*"Predicting gait adaptations due to ankle plantarflexor muscle weakness and contracture using physics-based musculoskeletal simulations."*
+## 2. Visualization
 
-These models were used as baseline models in the present study.
+This folder contains the MATLAB scripts used to process, analyze, and visualize the SCONE simulation results presented in the manuscript.
 
-In addition, two subject-specific models were generated in this work:
+The folder includes:
 
-* **95th-percentile male model**
-* **5th-percentile female model**
+* **SCONE Results** – A compressed archive containing the SCONE simulation results required by the visualization scripts.
+* MATLAB scripts for extracting gait data, performing post-processing, and generating the figures and analyses presented in the manuscript.
 
-These models were developed to investigate the effects of plantarflexor muscle weakness across different anthropometric characteristics and to generate the corresponding impaired gait simulations.
-
-#### Optimization Setups
-
-This directory contains all files required to reproduce the SCONE optimization studies presented in the manuscript.
-
-For the assisted-gait simulations, an additional assistance controller was integrated into the original gait controller. The assistance controller was implemented in **Lua** and operated alongside the baseline gait control framework during optimization and simulation.
-
-### 2. Visualization Folder
-
-The Visualization folder contains MATLAB scripts used to process and extract data from SCONE simulation results.
-
-These scripts were developed to generate the figures and analyses presented in the manuscript and may also be used for further post-processing of the simulation outputs.
+> **Important:** **Before running any MATLAB visualization script, you must first extract (unzip) the `SCONE Results` archive. The scripts are configured to access the simulation results from the extracted folder, and they will not run correctly if the archive remains compressed.**
 
