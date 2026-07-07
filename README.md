@@ -5,8 +5,6 @@ This repository contains the simulation results and optimization setups associat
 
 The files are provided to facilitate reproducibility, enable additional analyses, and serve as starting points for future SCONE optimization studies.
 
-Here is a revised repository structure description reflecting the new organization:
-
 ---
 
 # Repository Structure
